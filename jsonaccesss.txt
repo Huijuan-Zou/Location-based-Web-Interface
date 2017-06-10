@@ -1,0 +1,30 @@
+{
+  "photos": [
+    {
+      "description": null, 
+      "geohash": "dr5ruyjw59ek", 
+      "id": 1, 
+      "latitude": 40.72934, 
+      "longitude": -73.997671, 
+      "path ": "/episodes/1"
+    }, 
+    {
+      "description": null, 
+      "geohash": "dr5ruyjw59ek", 
+      "id": 2, 
+      "latitude": 40.729869, 
+      "longitude": -73.994494, 
+      "path ": "/episodes/2"
+    }, 
+    {
+      "description": null, 
+      "geohash": "dr5ruyjw59ek", 
+      "id": 3, 
+      "latitude": 40.729862, 
+      "longitude": -73.994495, 
+      "path ": "/episodes/2"
+    }
+  ]
+}
+
+photos[0].description

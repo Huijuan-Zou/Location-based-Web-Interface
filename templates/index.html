@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/stylesheet.css') }}"> 
+<script async defer
+ src=
+ "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyBI0xGGbgGA2VrmNaO20_hcJc4e0Qhmhvg&v=3&callback=initMap">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script  src="{{ url_for('static', filename='javascript/index.js') }}"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div id="optionsBox" class="options-box">
+      <h1>Explore your episodes</h1>
+      <div>
+        <input id="show-listings" type="button" value="Show episodes"> 
+        <input id="hide-listings" type="button" value="Hide episodes">
+      </div> 
+      <div>
+        <input id="zoom-to-area-text" type="text" placeholder="Enter your area to check episodes!">
+        <input id="check-episodes" type="button" value="Check episodes by address">
+      </div>
+      <div>
+        <input id="zoom-to-episode-text" type="text" placeholder="Enter your episode name to check episodes!">
+        <input id="check-by-name" type="button" value="Check episodes by name">
+      </div>
+      <div>
+        <input type="button" id="create-episode" onclick="location.href='{{url_for('upload') }}';" value="Create new episode" />
+        <input type="button" id="log-out" onclick="location.href='{{url_for('dropsession') }}';" value="Log out" />
+      </div>
+      
+   </div>
+   
+   <div id="map"></div> 
+  </div>
+  <div id="parentDiv">
+   <button onclick="myFunction()" id="optionsButton" class="button">Show options</button>
+ </div>
+
+</body>
+</html>
